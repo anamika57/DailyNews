@@ -7,16 +7,14 @@ import News from './Components/News';
 
 //rfc -> return directly  , rcc-> render function returns
 export default class App extends Component {
-   c='john'
+ 
   render() {
     return (
 <>
    <Navbar/>
-   <News/>
+   <News pageSize={5}/>
 
-      <div>
-        Hello my First Class Based  Component {this.c}
-      </div>
+
       </>
     )
   }
